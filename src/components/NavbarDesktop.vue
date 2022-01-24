@@ -1,24 +1,26 @@
 <template>
-  <div class="d-flex justify-content-between align-items-center bg-dark py-2 py-md-3 fixed-top">
-    <nav class="col-9 d-none d-lg-block text-uppercase">
-      <ul class="d-flex justify-content-around">
-        <li>
-          <router-link to="/about-me">{{ $t("navigation.aboutMe") }}</router-link>
-        </li>
-        <li>
-          <router-link to="/skills">{{ $t("navigation.skills") }}</router-link>
-        </li>
-        <li>
-          <router-link to="/portfolio">{{ $t("navigation.portfolio") }}</router-link>
-        </li>
-        <li>
-          <router-link to="/contacts">{{ $t("navigation.contacts") }}</router-link>
-        </li>
-      </ul>
-    </nav>
+  <div class="d-none d-lg-block text-uppercase">
+    <div class="d-flex justify-content-between align-items-center bg-dark py-2 py-md-3 fixed-top">
+      <nav class="col-9">
+        <ul class="d-flex justify-content-around">
+          <li>
+            <router-link to="/about-me">{{ $t("navigation.aboutMe") }}</router-link>
+          </li>
+          <li>
+            <router-link to="/skills">{{ $t("navigation.skills") }}</router-link>
+          </li>
+          <li>
+            <router-link to="/portfolio">{{ $t("navigation.portfolio") }}</router-link>
+          </li>
+          <li>
+            <router-link to="/contacts">{{ $t("navigation.contacts") }}</router-link>
+          </li>
+        </ul>
+      </nav>
 
-    <div class="col-12 col-lg-3">
-      <LangSelector />
+      <div class="col-12 col-lg-3">
+        <LangSelector />
+      </div>
     </div>
   </div>
 </template>

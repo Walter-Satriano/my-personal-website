@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex justify-content-center align-items-center text-uppercase">
+  <div class="d-flex justify-content-center align-items-center text-uppercase py-1 py-lg-0">
     <img src="../assets/images/gb.svg" alt="English-Flag">
     <a :class="'link' + [activeLanguage === 'en' ? ' active' : '']"
       @click="selectLanguage('en')">Eng
@@ -38,20 +38,20 @@
 
 <style lang="scss" scoped>
   img {
-    width: 25px;
+    width: 18px;
     height: auto;
     margin-right: 0.6rem;
   }
 
   span {
-    font-size: 1.3rem;
+    font-size: 0.9rem;
     font-weight: 500;
     color: #D3D3D3;
     margin: 0 1.5rem;
   }
 
   .link {
-    font-size: 1.3rem;
+    font-size: 0.9rem;
     font-weight: 500;
     color: #D3D3D3;
     text-decoration: none;
@@ -60,5 +60,20 @@
     &.active {
       color: #FFA500;
     }
+  }
+
+  @media (min-width: 992px) {
+    img {
+      width: 25px;
+      height: auto;
+    }
+
+    span {
+      font-size: 1.3rem;
+    }
+
+    .link {
+      font-size: 1.3rem;
+    }    
   }
 </style>
