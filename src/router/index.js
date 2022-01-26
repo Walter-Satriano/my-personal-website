@@ -1,14 +1,38 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import About from "../views/About.vue";
+import Skills from "../views/Skills.vue";
+import Portfolio from "../views/Portfolio.vue";
+import Contacts from "../views/Contacts.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
-  // {
-  //   path: "/",
-  //   name: "Home",
-  //   component: Home,
-  // },
+  {
+    path: "/",
+    name: "About",
+    component: About
+  },
+  {
+    path: "/about",
+    name: "About",
+    component: About,
+  },
+  {
+    path: "/skills",
+    name: "Skills",
+    component: Skills,
+  },
+  {
+    path: "/portfolio",
+    name: "Portfolio",
+    component: Portfolio,
+  },
+  {
+    path: "/contacts",
+    name: "Contacts",
+    component: Contacts,
+  },
   // {
   //   path: "/about",
   //   name: "About",
