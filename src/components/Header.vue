@@ -24,11 +24,17 @@
     h1 {
       color: #FFA500;
       font-size: 2rem;
+      font-weight: 600;
     }
   
     h3 {
       color: #D3D3D3;
       font-size: 1.2rem;
+      font-weight: 300;
+
+      span {
+        font-weight: 600;
+      }
     }
   }
 
