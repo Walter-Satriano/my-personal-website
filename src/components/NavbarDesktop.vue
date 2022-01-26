@@ -1,6 +1,6 @@
 <template>
   <div class="d-none d-lg-block text-uppercase">
-    <div class="d-flex justify-content-between align-items-center bg-dark py-2 py-md-3 fixed-top">
+    <div class="desktop_nav_shadow fixed-top d-flex justify-content-between align-items-center bg-dark py-2 py-md-3">
       <nav class="col-9">
         <ul class="d-flex justify-content-around">
           <li>
@@ -38,6 +38,10 @@
 </script>
 
 <style lang="scss" scoped>
+  .desktop_nav_shadow {
+    box-shadow: 0px 2px 10px #ffa500;
+  }
+
   ul {
     list-style: none;
     padding: 0;

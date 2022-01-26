@@ -1,5 +1,5 @@
 <template>
-  <div class="d-block d-lg-none bg-dark fixed-bottom">
+  <div class="mobile_nav_shadow fixed-bottom d-block d-lg-none bg-dark">
     <div>
       <LangSelector />
     </div>
@@ -47,6 +47,9 @@
 </script>
 
 <style lang="scss" scoped>
+  .mobile_nav_shadow {
+    box-shadow: 0px 1px 15px #ffa500;
+  }
   nav {
     border-top: 2px solid #FFA500;
   }
