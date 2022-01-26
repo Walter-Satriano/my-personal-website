@@ -1,6 +1,6 @@
 <template>
   <div class="d-block d-lg-none bg-dark fixed-bottom">
-    <div class="">
+    <div>
       <LangSelector />
     </div>
     <nav class="py-2">
@@ -37,7 +37,6 @@
 
 <script>
   import LangSelector from "./LangSelector.vue";
-
 
   export default {
     name: "MobileDesktop",
