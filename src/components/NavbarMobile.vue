@@ -6,9 +6,9 @@
     <nav class="py-2">
       <ul class="d-flex justify-content-around">
         <li>
-          <router-link to="/about-me">
+          <router-link to="/about">
             <i class="bi bi-person-circle"></i>
-            {{ $t("navigation.aboutMe") }}
+            {{ $t("navigation.about") }}
           </router-link>
         </li>
         <li>

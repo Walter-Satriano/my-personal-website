@@ -1,17 +1,14 @@
 <template>
-  <div class="container-fluid">
+  <div class="container-fluid bg-dark">
     <div class="row justify-content-center align-items-center">
-      <div class="col-5">
+      <div class="col-8 col-lg-5">
         <img src="../assets/io.jpg" alt="" class="w-75">
       </div>
-      <div class="col-5">
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus quos at. 
-          Nobis architecto voluptatem enim, amet labore ex dolor ut aut nihil. 
-          Aliquid nulla commodi perferendis ad! Rerum, aperiam!
-          </h3>
+      <div class="col-11 col-lg-7 text-white">
+        <h3>{{ $t("header.hello") }} <span>Walter.</span></h3>
+        <h1>Junior Frontend Developer</h1>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -22,5 +19,9 @@
 </script>
 
 <style lang="scss" scoped>
+  h1 {
+    color: #FFA500;
+    font-size: 4rem;
+  }
 
 </style>

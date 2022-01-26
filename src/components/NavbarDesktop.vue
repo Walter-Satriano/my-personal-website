@@ -4,7 +4,7 @@
       <nav class="col-9">
         <ul class="d-flex justify-content-around">
           <li>
-            <router-link to="/about-me">{{ $t("navigation.aboutMe") }}</router-link>
+            <router-link to="/about">{{ $t("navigation.about") }}</router-link>
           </li>
           <li>
             <router-link to="/skills">{{ $t("navigation.skills") }}</router-link>
