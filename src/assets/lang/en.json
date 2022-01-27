@@ -1,8 +1,28 @@
 {
   "navigation": {
-    "aboutMe": "About Me",
+    "about": "About",
     "skills": "Skills",
     "portfolio": "Portfolio",
     "contacts": "Contacts"
+  },
+
+  "header": {
+    "hello": "Hello, my name is"
+  },
+
+  "aboutSection": {
+    "title": "About"
+  },
+
+  "skillsSection": {
+    "title": "Skills"
+  },
+
+  "portfolioSection": {
+    "title": "Portfolio"
+  },
+
+  "contactsSection": {
+    "title": "Contacts"
   }
 }
