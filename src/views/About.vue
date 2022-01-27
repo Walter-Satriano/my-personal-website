@@ -1,6 +1,6 @@
 <template>
   <section class="about_section bg-dark">
-    <h2 class="text-center text-uppercase py-3">{{ $t("aboutSection.title" ) }}</h2>
+    <h2 class="text-center text-uppercase py-3">{{ $t("aboutSection.title") }}</h2>
 
     <div class="container-fluid">
       <div class="row justify-content-center align-items-center">
