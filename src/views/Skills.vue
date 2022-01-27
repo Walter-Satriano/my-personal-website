@@ -27,14 +27,14 @@
       getStar: function(stars) {
         let rate = stars;
         let fullStars = `<i class="bi bi-star-fill"></i>`;
-        let emptyStars = `<i class="bi bi-star"></i>`
+        let emptyStars = `<i class="bi bi-star"></i>`;
 
         let graphStar = "";
         for (let i = 0; i < 5; i++) {
           if (i < rate) {
-            graphStar += fullStars; //stelle piene
+            graphStar += fullStars;
           } else {
-            graphStar += emptyStars; //stelle vuote
+            graphStar += emptyStars;
           }
         }
 
