@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "skillName": "Html 5",
+    "rating": 4,
+    "image": "html5.png"
+  },
+  {
+    "id": 2,
+    "skillName": "Css 3",
+    "rating": 4,
+    "image": "css3.png"
+  },
+  {
+    "id": 3,
+    "skillName": "Sass",
+    "rating": 4,
+    "image": "sass.png"
+  },
+  {
+    "id": 4,
+    "skillName": "Bootstrap 5",
+    "rating": 4,
+    "image": "bootstrap.png"
+  },
+  {
+    "id": 5,
+    "skillName": "Tailwind",
+    "rating": 2,
+    "image": "tailwind.png"
+  },
+  {
+    "id": 6,
+    "skillName": "Javascript",
+    "rating": 3,
+    "image": "javascript.png"
+  },
+  {
+    "id": 7,
+    "skillName": "Vue Js",
+    "rating": 3,
+    "image": "vuejs.png"
+  },
+  {
+    "id": 8,
+    "skillName": "JQuery",
+    "rating": 2,
+    "image": "jquery.png"
+  },
+  {
+    "id": 9,
+    "skillName": "Laravel",
+    "rating": 1,
+    "image": "laravel.png"
+  },
+  {
+    "id": 10,
+    "skillName": "Php",
+    "rating": 1,
+    "image": "php.png"
+  },
+  {
+    "id": 11,
+    "skillName": "MySQL",
+    "rating": 1,
+    "image": "mysql.png"
+  },
+  {
+    "id": 12,
+    "skillName": "Git",
+    "rating": 3,
+    "image": "git.png"
+  }
+]
