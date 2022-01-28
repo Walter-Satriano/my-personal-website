@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "projectIcon":"palette.svg",
+    "name": "Pixel drawing app",
+    "madeWith": "Html, Css, VueJs",
+    "linkToLiveDemo": "aaa",
+    "linkToGithubCode": "https://github.com/Walter-Satriano/Vuejs-Pixel-Drawing-App"
+  },
+  {
+    "id": 2,
+    "projectIcon":"coin.svg",
+    "name": "Bill tracker app",
+    "madeWith": "Html, Css, Tailwind, VueJs, ChartJs",
+    "linkToLiveDemo": "ccc",
+    "linkToGithubCode": "https://github.com/Walter-Satriano/Vuejs-Bill-Tracker-App"
+  },
+  {
+    "id": 3,
+    "projectIcon":"search.svg",
+    "name": "Github user search app",
+    "madeWith": "Html, Css(Sass), Bootstrap 5, VueJs, Axios",
+    "linkToLiveDemo": "ccc",
+    "linkToGithubCode": "https://github.com/Walter-Satriano/Vuejs-Github-Users-Search-App"
+  },
+  {
+    "id": 4,
+    "projectIcon":"cart3.svg",
+    "name": "Ecommerce example",
+    "madeWith": "Html, Css(Sass), Bootstrap 5, VueJs, VueX, Vue Router",
+    "linkToLiveDemo": "ccc",
+    "linkToGithubCode": "https://github.com/Walter-Satriano/Vuejs-E-Commerce-Site"
+  }
+]
