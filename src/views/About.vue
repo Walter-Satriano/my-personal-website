@@ -28,7 +28,7 @@
 
 <style lang="scss" scoped>
   .about_section {
-    padding-bottom: 7rem;
+    padding-bottom: 8rem;
 
     h2 {
       color: #FFA500;
@@ -37,6 +37,13 @@
 
     p {
       color: #D3D3D3;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .about_section {
+      padding-bottom: 1.5rem;
+         
     }
   }
 

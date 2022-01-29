@@ -42,7 +42,7 @@
 
 <style lang="scss" scoped>
   .portfolio_section {
-    padding-bottom: 7rem;
+    padding-bottom: 8rem;
 
     h2, h4 {
       color: #FFA500;
@@ -104,6 +104,7 @@
 
   @media (min-width: 992px) {
     .portfolio_section {
+      padding-bottom: 1.5rem;
 
       .card {
         max-width: 400px;

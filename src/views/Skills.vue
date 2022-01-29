@@ -46,7 +46,7 @@
 
 <style lang="scss" scoped>
   .skills_section {
-    padding-bottom: 7rem;
+    padding-bottom: 8rem;
 
     h2 {
       color: #FFA500;
@@ -101,6 +101,7 @@
   
   @media (min-width: 992px) {
     .skills_section {
+      padding-bottom: 1.5rem;
     
       h3 {
         font-size: 1.5rem;

@@ -56,7 +56,9 @@
         </div>
       </div>
     </div>
-
+    <footer class="text-center">
+      <p>{{ $t("contactsSection.copyRight", {dateYear}) }}</p>
+    </footer>
   </section>
 </template>
 
@@ -71,8 +73,8 @@
         companyName: '',
         email: '',
         message: '',
-        isFormSubmitted: false
-
+        isFormSubmitted: false,
+        dateYear: new Date().getFullYear()
       }
     },
     methods: {        
@@ -106,7 +108,7 @@
 
 <style lang="scss" scoped>
   .contacts_section {
-    padding-bottom: 7rem;
+    padding-bottom: 8rem;
 
     h2, h4 {
       color: #FFA500;
@@ -164,6 +166,15 @@
         }
       }
     }
+
+    footer {
+      margin-top: 5rem;
+
+      p {
+        font-size: 1.1rem;
+        margin-bottom: 0;
+      }
+    }
   }
 
     @media (min-width: 270px) and (max-width: 310px) {
@@ -186,7 +197,8 @@
 
   @media (min-width: 992px) {
     .contacts_section {
-    
+      padding-bottom: 1.5rem;
+
       p {
         font-size: 1.2rem;
       }
