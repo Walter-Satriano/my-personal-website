@@ -7,7 +7,7 @@
         <div v-for="skill in skills" :key="skill.id" class="col-6 col-sm-4 col-lg-3 col-xl-2 text-center pb-5">
           <img :src="require(`../assets/images/${skill.image}`)" alt="">
           <h3 class="mt-2">{{ skill.skillName }}</h3>
-          <span v-html="getStar(skill.rating)" class=""></span>
+          <span v-html="getStar(skill.rating)"></span>
         </div>
       </div>
     </div>
@@ -24,7 +24,7 @@
       }
     },
     methods: {
-      getStar: function(stars) {
+      getStar(stars) {
         let rate = stars;
         let fullStars = `<i class="bi bi-star-fill"></i>`;
         let emptyStars = `<i class="bi bi-star"></i>`;
