@@ -1,6 +1,6 @@
 <template>
   <section class="portfolio_section bg-dark">
-    <h2 class="text-center text-uppercase py-3">{{ $t("portfolioSection.title") }}</h2>
+    <h2 class="text-center text-uppercase py-3 mb-3 mb-lg-5">{{ $t("portfolioSection.title") }}</h2>
 
     <div class="container-fluid">
       <div class="row justify-content-around">
