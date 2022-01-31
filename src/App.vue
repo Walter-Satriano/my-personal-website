@@ -1,11 +1,13 @@
 <template>
-  <div id="app">
+  <div id="app" class="bg-dark">
 
     <NavbarDesktop />
     <NavbarMobile />
     <Header />
 
-    <router-view></router-view>
+    <transition name="fade" mode="out-in">
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
@@ -45,5 +47,20 @@
 
   #app {
     font-family: "Montserrat", sans-serif;
+
+    .fade-enter-active,
+    .fade-leave-active {
+      transition: all .6s cubic-bezier(1.0, 1.0, 1.0, 1.0);
+    }
+
+    .fade-enter-active {
+      transition-delay: .6s;
+    }
+
+    .fade-enter,
+    .fade-leave-active {
+      transform: translateY(8rem);
+      opacity: 0;
+    }
   }
 </style>
