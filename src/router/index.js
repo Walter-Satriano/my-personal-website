@@ -10,28 +10,27 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    name: "About",
-    component: About
+    redirect: "/about"
   },
   {
     path: "/about",
     name: "About",
-    component: About,
+    component: About
   },
   {
     path: "/skills",
     name: "Skills",
-    component: Skills,
+    component: Skills
   },
   {
     path: "/portfolio",
     name: "Portfolio",
-    component: Portfolio,
+    component: Portfolio
   },
   {
     path: "/contacts",
     name: "Contacts",
-    component: Contacts,
+    component: Contacts
   },
   // {
   //   path: "/about",
