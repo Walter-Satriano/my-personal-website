@@ -1,10 +1,13 @@
 <template>
   <header class="container-fluid bg-dark">
-    <div class="row justify-content-center align-items-center">
-      <div class="col-8 col-lg-5 text-center">
-        <img src="../assets/io.jpg" alt="walter-header" class="w-75">
+    <div class="d-block d-lg-none mb-5">
+      <LangSelector />
+    </div>
+    <div class="row justify-content-center align-items-center m-0">
+      <div class="col-10 col-sm-11 col-lg-5 text-center order-1 order-lg-0">
+        <img src="../assets/images/square.jpg" alt="walter-header" class="img-fluid">
       </div>
-      <div class="col-12 col-lg-7 text-center text-lg-start">
+      <div class="col-12 col-lg-6 text-center text-lg-start order-0 order-lg-1 mb-3 mb-lg-0">
         <h3>{{ $t("header.hello") }} <span>Walter.</span></h3>
         <h1>Junior Frontend Developer</h1>
       </div>
@@ -13,23 +16,30 @@
 </template>
 
 <script>
+  import LangSelector from "./LangSelector.vue";
+
   export default {
     name: "Header",
+    components: {
+      LangSelector
+    }
   }
 </script>
 
 <style lang="scss" scoped>
   header {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
 
     h1 {
       color: #FFA500;
-      font-size: 2rem;
+      font-size: 2.5rem;
       font-weight: 600;
     }
   
     h3 {
       color: #D3D3D3;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       font-weight: 300;
 
       span {
@@ -42,11 +52,11 @@
     header {
 
       h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
       }
     
       h3 {
-        font-size: 1.8rem;
+        font-size: 2.3rem;
       }
     }
   }
@@ -55,17 +65,18 @@
     header {
 
       h1 {
-        font-size: 2.9rem;
+        font-size: 3.2rem;
       }
     
       h3 {
-        font-size: 2.1rem;
+        font-size: 2.5rem;
       }
     }
   }  
 
   @media (min-width: 992px) {
     header {
+      padding: 8rem 0 5rem 0;
 
       h1 {
         font-size: 3.8rem;
@@ -73,6 +84,19 @@
     
       h3 {
         font-size: 2.3rem;
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    header {
+
+      h1 {
+        font-size: 4rem;
+      }
+    
+      h3 {
+        font-size: 3rem;
       }
     }
   }
