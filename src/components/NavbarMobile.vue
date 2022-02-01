@@ -1,8 +1,5 @@
 <template>
   <div class="mobile_nav_shadow fixed-bottom d-block d-lg-none bg-dark">
-    <div>
-      <LangSelector />
-    </div>
     <nav class="py-2">
       <ul class="d-flex justify-content-around">
         <li>
@@ -31,18 +28,13 @@
         </li>
       </ul>
     </nav>
-
   </div>
 </template>
 
 <script>
-  import LangSelector from "./LangSelector.vue";
 
   export default {
-    name: "MobileDesktop",
-    components: {
-      LangSelector
-    }
+    name: "MobileDesktop"
   }
 </script>
 
