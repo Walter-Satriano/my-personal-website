@@ -12,8 +12,10 @@
     <cookie-law theme="myTheme" transitionName="fade">
       <div slot-scope="props" class="container-fluid py-2">
         <div class="row justify-content-center align-items-center">
-          <div class="col-12 col-md-8 text-center text-md-start">
-            <p class="m-0">{{ $t("cookies.text") }}</p>
+          <div class="col-12 col-md-8 text-center text-md-start pb-2 pb-md-0">
+            <p class="m-0">{{ $t("cookies.text") }}
+              <router-link to="/privacy-policy" class="privacy_policy">Privacy Policy</router-link>
+            </p>
           </div>
           <div class="col-12 col-md-4 text-center text-md-end pe-md-5">
             <button class="btn btn-sm py-1 px-2 me-3" @click="props.accept">{{ $t("cookies.accept") }}</button>
@@ -92,6 +94,10 @@
     p {
       color: #212529;
       font-size: 0.7rem;
+
+      .privacy_policy {
+        color: #FFA500;
+      }
     }
 
     button {
@@ -148,19 +154,5 @@
         font-size: 1rem;
       }
     }    
-  }
-
-  @media (min-width: 1200px) {
-    .Cookie--myTheme {
-
-      p {
-        font-size: 1.1rem;
-        padding-bottom: 0;
-      }
-
-      button {
-        font-size: 1.1rem;
-      }
-    }    
-  }  
+  } 
 </style>
