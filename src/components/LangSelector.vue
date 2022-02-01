@@ -47,7 +47,7 @@
     font-size: 0.9rem;
     font-weight: 500;
     color: #D3D3D3;
-    margin: 0 1.5rem;
+    margin: 0 1.2rem;
   }
 
   .link {
@@ -59,6 +59,16 @@
 
     &.active {
       color: #FFA500;
+    }
+  }
+
+  @media (min-width: 576px) {
+    .link {
+      font-size: 1rem;
+    }
+
+    span {
+      font-size: 1rem;
     }
   }
 
