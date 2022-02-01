@@ -3,16 +3,20 @@
     <h2 class="text-center text-uppercase py-3 mb-3 mb-lg-5">{{ $t("aboutSection.title") }}</h2>
 
     <div class="container-fluid">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-12 col-lg-7">
+      <div class="row justify-content-center align-items-center m-0">
+        <div class="col-12 col-lg-7 text-center text-lg-start">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Fuga porro sit facere quasi quia explicabo nobis unde vitae officia 
             aperiam esse nesciunt vel, consectetur ducimus impedit, fugit aut cumque totam?
           </p>
+          <button @click.prevent="downloadCurriculum()" class="btn btn-lg text-uppercase mb-4 mb-lg-0">
+            <i class="bi bi-download me-2"></i>
+            {{ $t("aboutSection.downloadCv") }}
+          </button>
         </div>
-        <div class="col-12 col-lg-5 text-center">
-          <img src="../assets/io.jpg" alt="" class="w-50">
+        <div class="col-10 col-lg-5 text-center">
+          <img src="../assets/images/square.jpg" alt="" class="img-fluid">
         </div>
       </div>
     </div>
@@ -20,9 +24,27 @@
 </template>
 
 <script>
+  import axios from 'axios';
 
   export default {
+    methods: {
+      downloadCurriculum() {
+        axios({
+          url: 'http://localhost:8080/Resume_Walter_Satriano.pdf',
+          method: 'GET',
+          responseType: 'blob',
+        }).then((response) => {
+          let fileURL = window.URL.createObjectURL(new Blob([response.data]));
+          let fileLink = document.createElement('a');
 
+          fileLink.href = fileURL;
+          fileLink.setAttribute('download', 'Resume_Walter_Satriano.pdf');
+          document.body.appendChild(fileLink);
+
+          fileLink.click();
+        });
+      }
+    }
   }
 </script>
 
@@ -37,6 +59,25 @@
 
     p {
       color: #D3D3D3;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+  }
+
+  button {
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid #FFA500;
+    background-color: #212529;
+    color: #D3D3D3;
+
+    &:hover {
+      background-color: #FFA500;
+      color: #212529;
+    }
+
+    i {
+      font-size: 1.2rem;
     }
   }
 
