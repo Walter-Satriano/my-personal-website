@@ -171,13 +171,13 @@
       margin-top: 5rem;
 
       p {
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin-bottom: 0;
       }
     }
   }
 
-    @media (min-width: 270px) and (max-width: 310px) {
+  @media (min-width: 270px) and (max-width: 310px) {
     .contacts_section {
     
       p {
