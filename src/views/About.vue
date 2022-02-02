@@ -16,6 +16,7 @@
         </div>
         <div class="col-10 col-lg-5 text-center">
           <img src="../assets/images/square.jpg" alt="" class="img-fluid">
+          <figcaption class="mt-2"><i>{{ $t("aboutSection.imgCaption") }}</i></figcaption>
         </div>
       </div>
     </div>
@@ -29,7 +30,7 @@
     methods: {
       downloadCurriculum() {
         axios({
-          url: 'http://localhost:8080/Resume_Walter_Satriano.pdf',
+          url: 'waltersatriano.com/Resume_Walter_Satriano.pdf',
           method: 'GET',
           responseType: 'blob',
         }).then((response) => {
@@ -80,9 +81,15 @@
     }
   }
 
+  figcaption {
+    font-size: 1rem;
+    color: #FFA500;
+    font-weight: 500;
+  }
+
   @media (min-width: 992px) {
     .about_section {
-      padding-bottom: 1.5rem;
+      padding-bottom: 2rem;
          
     }
   }
