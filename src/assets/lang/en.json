@@ -1,6 +1,6 @@
 {
   "navigation": {
-    "about": "About",
+    "about": "About me",
     "skills": "Skills",
     "portfolio": "Portfolio",
     "contacts": "Contacts"
@@ -11,7 +11,12 @@
   },
 
   "aboutSection": {
-    "title": "About"
+    "title": "About me",
+    "text1": "Hi! I'm Walter, I'm 37 years old and I'm a Junior Frontend Developer. Throughout my life I've always taken very different paths from programming, both in my studies and in my work. I have a bachelor's degree in architecture and have almost always worked in the commercial world. However, all these paths did not satisfy me.",
+    "text2": "For these reasons, I approached the world of programming out of curiosity to learn new things and the desire to get involved. I heard about a 6-month intensive online course for web developers and I decided to attend it. It was hard because before then I had never programmed, but with commitment and perseverance I managed to finish the course with good results and, a few months after, I found a job in a cosmetics company: a great experience of about 9 months in which I was able to put into practice what I had learned during my studies.",
+    "text3": "The world of web development, especially the frontend part, is very stimulating and allows me to express my creativity. That's why I always try to keep up to date and learn new technologies. During the pandemic I was able to take advantage of the time available to learn the basics of the framework VueJS, with which I have created this site and the projects you will find in the portfolio section.",
+    "downloadCv": "Download my cv",
+    "imgCaption": "To code, or not to code, that is the question."
   },
 
   "skillsSection": {
@@ -19,10 +24,47 @@
   },
 
   "portfolioSection": {
-    "title": "Portfolio"
+    "title": "Portfolio",
+    "madeWith": "Made with:",
+    "goToDemo": "Go to demo",
+    "seeTheCode": "See the code"
   },
 
   "contactsSection": {
-    "title": "Contacts"
+    "title": "Contacts",
+    "paragraph": "Feel free to get in touch with me. I'm always open to discuss new job opportunity.",
+    "inputName": "Name",
+    "inputSurname": "Surname",
+    "inputCompanyName": "Company Name",
+    "inputemail": "Email",
+    "inputMessage": "Message",
+    "checkboxAuthorisation": "I authorise the processing of my personal data",
+    "sendMessage": "Send Message",
+    "successFormSubmit":"Your message has been send correctly.",
+    "contactDetails": "Contact details",
+    "contactDetailLocation": "Asti, Piedmont, Italy",
+    "followMe": "Follow Me",
+    "copyRight": "Copyright © {dateYear} Walter Satriano. All rights reserved"
+  },
+
+  "cookies": {
+    "text": "This site uses its own and third-party cookies to improve your browsing experience. To find out more, read the",
+    "accept": "I accept",
+    "decline": "I decline"
+  },
+
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "text1": "This site collects some personal data of its users.",
+    "dataController": "Data owner: ",
+    "ownerEmail": "Owner contact email: ",
+    "text2": "Among the personal data collected by this site, either independently or through third parties, there are: Cookies, Name, Surname, Company Name and Email.",
+    "text3": "Personal data can be freely provided by the user. Unless otherwise specified, all data requested by this site are mandatory. If the user refuses to communicate them, it may be impossible for this site to provide the service. In cases where this site indicates some data as optional, users are free to refrain from communicating such data, without this having any consequence on the availability of the service or on its operation. Users who have doubts about which data are mandatory are encouraged to contact the owner. Any use of Cookies - or other tracking tools - by this site or by the owners of third party services used by this site, unless otherwise specified, is intended to provide the service requested by the user",
+    "text4": "The user assumes responsibility for the personal data of third parties obtained, published or shared through this site and guarantees to have the right to communicate or disseminate them, freeing the owner from any liability to third parties.",
+    "text5": "Personal data are collected for the following purposes and using the following services:",
+    "contactForm": "► Contact form on this site",
+    "text6": "By filling in the contact form with their data, the user consents to their use to respond to requests for information, quotes, or any other nature indicated by the form header. The personal data collected are: Name, Surname, Company Name and Email.",
+    "legalReferences": "Legal references",
+    "text7": "This privacy statement is drawn up on the basis of multiple legislative systems, including articles 13 and 14 of the 2016/679 European Regulation. Unless otherwise specified, this privacy statement applies exclusively to this site."
   }
 }
