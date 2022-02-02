@@ -1,16 +1,15 @@
 <template>
   <section class="about_section bg-dark">
-    <h2 class="text-center text-uppercase py-3 mb-3 mb-lg-5">{{ $t("aboutSection.title") }}</h2>
+    <h2 class="text-center text-uppercase py-3 mb-3 mb-xl-5">{{ $t("aboutSection.title") }}</h2>
 
     <div class="container-fluid">
       <div class="row justify-content-center align-items-center m-0">
-        <div class="col-12 col-lg-7 text-center text-lg-start">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Fuga porro sit facere quasi quia explicabo nobis unde vitae officia 
-            aperiam esse nesciunt vel, consectetur ducimus impedit, fugit aut cumque totam?
-          </p>
-          <button @click.prevent="downloadCurriculum()" class="btn btn-lg text-uppercase mb-4 mb-lg-0">
+        <div class="col-12 col-lg-11 col-xl-7 text-center text-xl-start">
+          <p>{{ $t("aboutSection.text1") }}</p>
+          <p>{{ $t("aboutSection.text2") }}</p>
+          <p>{{ $t("aboutSection.text3") }}</p>
+
+          <button @click.prevent="downloadCurriculum()" class="btn btn-lg text-uppercase mb-4 mb-xl-0">
             <i class="bi bi-download me-2"></i>
             {{ $t("aboutSection.downloadCv") }}
           </button>
@@ -69,7 +68,7 @@
     font-weight: 600;
     border: 2px solid #FFA500;
     background-color: #212529;
-    color: #D3D3D3;
+    color: #FFA500;
 
     &:hover {
       background-color: #FFA500;
