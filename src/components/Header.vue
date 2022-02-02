@@ -4,10 +4,10 @@
       <LangSelector />
     </div>
     <div class="row justify-content-center align-items-center m-0">
-      <div class="col-10 col-sm-11 col-lg-5 text-center order-1 order-lg-0">
+      <div class="col-10 col-sm-11 col-lg-5 text-center mb-4 mb-xl-0">
         <img src="../assets/images/square.jpg" alt="walter-header" class="img-fluid">
       </div>
-      <div class="col-12 col-lg-6 text-center text-lg-start order-0 order-lg-1 mb-3 mb-lg-0">
+      <div class="col-12 col-lg-11 col-xl-6 text-center text-xl-start">
         <h3>{{ $t("header.hello") }} <span>Walter.</span></h3>
         <h1>Junior Frontend Developer</h1>
       </div>
