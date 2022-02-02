@@ -33,8 +33,12 @@
               <label for="message">{{ $t("contactsSection.inputMessage") }}</label>
             </div>
 
-            <p v-if="isFormSubmitted" class="py-2">{{ $t("contactsSection.successFormSubmit") }}</p>
-            <button type="submit" class="btn btn-lg text-uppercase">{{ $t("contactsSection.sendMessage") }}</button>
+            <div class="checkbox mb-4">
+              <input class="me-2" type="checkbox" value="agree" id="agree" v-model="checked">
+              <label for="agree">{{ $t("contactsSection.checkboxAuthorisation") }}</label>
+            </div>
+            <button :disabled="!checked" type="submit" class="btn btn-lg text-uppercase">{{ $t("contactsSection.sendMessage") }}</button>
+            <p v-if="isFormSubmitted" class="pt-4">{{ $t("contactsSection.successFormSubmit") }}</p>
           </form>
         </div>
 
@@ -73,6 +77,7 @@
         companyName: '',
         email: '',
         message: '',
+        checked: false,
         isFormSubmitted: false,
         dateYear: new Date().getFullYear()
       }
@@ -101,6 +106,8 @@
         this.companyName = ''
         this.email = ''
         this.message = ''
+        this.checked = false
+
       }
     }
   }
@@ -164,6 +171,12 @@
           background-color: #FFA500;
           color: #212529;
         }
+      }
+    }
+
+    .checkbox {
+      label {
+        font-size: 0.9rem;
       }
     }
 
