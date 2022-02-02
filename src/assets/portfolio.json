@@ -4,7 +4,7 @@
     "projectIcon":"palette.svg",
     "name": "Pixel drawing app",
     "madeWith": "Html, Css, VueJs",
-    "linkToLiveDemo": "aaa",
+    "linkToLiveDemo": "https://pixel-drawing-app-vuejs.netlify.app/",
     "linkToGithubCode": "https://github.com/Walter-Satriano/Vuejs-Pixel-Drawing-App"
   },
   {
@@ -12,7 +12,7 @@
     "projectIcon":"coin.svg",
     "name": "Bill tracker app",
     "madeWith": "Html, Css, Tailwind, VueJs, ChartJs",
-    "linkToLiveDemo": "ccc",
+    "linkToLiveDemo": "https://bill-tracker-app-vuejs.netlify.app/",
     "linkToGithubCode": "https://github.com/Walter-Satriano/Vuejs-Bill-Tracker-App"
   },
   {
@@ -20,7 +20,7 @@
     "projectIcon":"search.svg",
     "name": "Github user search app",
     "madeWith": "Html, Css(Sass), Bootstrap 5, VueJs, Axios",
-    "linkToLiveDemo": "ccc",
+    "linkToLiveDemo": "https://github-users-search-vuejs.netlify.app/",
     "linkToGithubCode": "https://github.com/Walter-Satriano/Vuejs-Github-Users-Search-App"
   },
   {
@@ -28,7 +28,7 @@
     "projectIcon":"cart3.svg",
     "name": "Ecommerce example",
     "madeWith": "Html, Css(Sass), Bootstrap 5, VueJs, VueX, Vue Router",
-    "linkToLiveDemo": "ccc",
+    "linkToLiveDemo": "https://e-commerce-frontend-layout-vuejs.netlify.app/",
     "linkToGithubCode": "https://github.com/Walter-Satriano/Vuejs-E-Commerce-Site"
   }
 ]
