@@ -15,7 +15,7 @@
           </button>
         </div>
         <div class="col-10 col-lg-5 text-center">
-          <img src="../assets/images/walter-with-duck.jpg" alt="" class="img-fluid">
+          <img src="../assets/images/walter-with-duck.jpg" alt="walter-with-duck" class="img-fluid">
           <figcaption class="mt-2"><i>"{{ $t("aboutSection.imgCaption") }}"</i><br><span>W.S.</span></figcaption>
         </div>
       </div>
@@ -80,6 +80,11 @@
       font-size: 1.2rem;
     }
   }
+
+  img {
+    border: 3px solid #FFA500;
+  }
+
 
   figcaption {
     font-size: 1rem;
