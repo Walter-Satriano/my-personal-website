@@ -4,16 +4,16 @@
       <nav class="col-9">
         <ul class="d-flex justify-content-around">
           <li>
-            <router-link to="/about">{{ $t("navigation.about") }}</router-link>
+            <router-link to="/about" @click.native="scrollToTop()">{{ $t("navigation.about") }}</router-link>
           </li>
           <li>
-            <router-link to="/skills">{{ $t("navigation.skills") }}</router-link>
+            <router-link to="/skills" @click.native="scrollToTop()">{{ $t("navigation.skills") }}</router-link>
           </li>
           <li>
-            <router-link to="/portfolio">{{ $t("navigation.portfolio") }}</router-link>
+            <router-link to="/portfolio" @click.native="scrollToTop()">{{ $t("navigation.portfolio") }}</router-link>
           </li>
           <li>
-            <router-link to="/contacts">{{ $t("navigation.contacts") }}</router-link>
+            <router-link to="/contacts" @click.native="scrollToTop()">{{ $t("navigation.contacts") }}</router-link>
           </li>
         </ul>
       </nav>
@@ -31,6 +31,11 @@
 
   export default {
     name: "NavbarDesktop",
+    methods: { 
+      scrollToTop() {
+        window.scrollTo(0,300);
+      }
+    },
     components: {
       LangSelector
     }

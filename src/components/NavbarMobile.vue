@@ -3,25 +3,25 @@
     <nav class="py-2">
       <ul class="d-flex justify-content-around">
         <li>
-          <router-link to="/about">
+          <router-link to="/about" @click.native="scrollToTop()">
             <i class="bi bi-person-circle"></i>
             {{ $t("navigation.about") }}
           </router-link>
         </li>
         <li>
-          <router-link to="/skills">
+          <router-link to="/skills" @click.native="scrollToTop()">
             <i class="bi bi-tools"></i>
             {{ $t("navigation.skills") }}
           </router-link>
         </li>
         <li>
-          <router-link to="/portfolio">
+          <router-link to="/portfolio" @click.native="scrollToTop()">
           <i class="bi bi-wallet2"></i>
             {{ $t("navigation.portfolio") }}
           </router-link>
         </li>
         <li>
-          <router-link to="/contacts">
+          <router-link to="/contacts" @click.native="scrollToTop()">
             <i class="bi bi-envelope-open-fill"></i>
             {{ $t("navigation.contacts") }}
           </router-link>
@@ -34,7 +34,12 @@
 <script>
 
   export default {
-    name: "MobileDesktop"
+    name: "MobileDesktop",
+    methods: { 
+      scrollToTop() {
+        window.scrollTo(0,300);
+      }
+    }
   }
 </script>
 
