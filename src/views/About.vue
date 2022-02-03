@@ -30,7 +30,7 @@
     methods: {
       downloadCurriculum() {
         axios({
-          url: 'waltersatriano.com/Resume_Walter_Satriano.pdf',
+          url: '/Resume_Walter_Satriano.pdf',
           method: 'GET',
           responseType: 'blob',
         }).then((response) => {
