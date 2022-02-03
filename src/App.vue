@@ -14,7 +14,7 @@
         <div class="row justify-content-center align-items-center">
           <div class="col-12 col-md-8 text-center text-md-start pb-2 pb-md-0">
             <p class="m-0">{{ $t("cookies.text") }}
-              <router-link to="/privacy-policy" class="privacy_policy">Privacy Policy</router-link>
+              <router-link to="/privacy-policy" class="privacy_policy" @click.native="scrollToTop()">Privacy Policy</router-link>
             </p>
           </div>
           <div class="col-12 col-md-4 text-center text-md-end pe-md-5">
@@ -39,7 +39,7 @@
       return {
         defaultLanguage: "en"
       }
-    },
+    },    
     beforeMount() {
       //get locale on page load
       let lang = localStorage.getItem("lang") ? localStorage.getItem("lang") : this.defaultLanguage;
@@ -50,6 +50,11 @@
       //Set the source language's file. We use setLocaleMessage() to load the corresponding JSON file.
       this.$i18n.setLocaleMessage(lang, require(`./assets/lang/${lang}.json`));
     },
+    methods: { 
+      scrollToTop() {
+        window.scrollTo(0,300);
+      }
+    },    
     components: {
       NavbarDesktop,
       NavbarMobile,
