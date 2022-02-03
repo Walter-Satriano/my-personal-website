@@ -15,8 +15,8 @@
           </button>
         </div>
         <div class="col-10 col-lg-5 text-center">
-          <img src="../assets/images/square.jpg" alt="" class="img-fluid">
-          <figcaption class="mt-2"><i>{{ $t("aboutSection.imgCaption") }}</i></figcaption>
+          <img src="../assets/images/walter-with-duck.jpg" alt="" class="img-fluid">
+          <figcaption class="mt-2"><i>"{{ $t("aboutSection.imgCaption") }}"</i><br><span>W.S.</span></figcaption>
         </div>
       </div>
     </div>
@@ -85,6 +85,10 @@
     font-size: 1rem;
     color: #FFA500;
     font-weight: 500;
+
+    span {
+      color: #D3D3D3;  
+    }
   }
 
   @media (min-width: 992px) {
