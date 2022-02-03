@@ -9,10 +9,10 @@
           <p>{{ $t("aboutSection.text2") }}</p>
           <p>{{ $t("aboutSection.text3") }}</p>
 
-          <button @click.prevent="downloadCurriculum()" class="btn btn-lg text-uppercase mb-4 mb-xl-0">
+          <a href="./Resume_Walter_Satriano.pdf" target="blank" class="btn btn-lg text-uppercase mb-4 mb-xl-0">
             <i class="bi bi-download me-2"></i>
             {{ $t("aboutSection.downloadCv") }}
-          </button>
+          </a>
         </div>
         <div class="col-10 col-lg-5 text-center">
           <img src="../assets/images/walter-with-duck.jpg" alt="walter-with-duck" class="img-fluid">
@@ -22,31 +22,6 @@
     </div>
   </section>
 </template>
-
-<script>
-  import axios from 'axios';
-
-  export default {
-    methods: {
-      downloadCurriculum() {
-        axios({
-          url: '/Resume_Walter_Satriano.pdf',
-          method: 'GET',
-          responseType: 'blob',
-        }).then((response) => {
-          let fileURL = window.URL.createObjectURL(new Blob([response.data]));
-          let fileLink = document.createElement('a');
-
-          fileLink.href = fileURL;
-          fileLink.setAttribute('download', 'Resume_Walter_Satriano.pdf');
-          document.body.appendChild(fileLink);
-
-          fileLink.click();
-        });
-      }
-    }
-  }
-</script>
 
 <style lang="scss" scoped>
   .about_section {
@@ -64,7 +39,7 @@
     }
   }
 
-  button {
+  a {
     font-size: 1rem;
     font-weight: 600;
     border: 2px solid #FFA500;
