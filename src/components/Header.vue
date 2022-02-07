@@ -4,7 +4,7 @@
       <LangSelector />
     </div>
     <div class="row justify-content-center align-items-center m-0">
-      <div class="col-10 col-sm-11 col-lg-6 col-xl-5 text-center mb-4 mb-xl-0">
+      <div class="col-10 col-sm-7 col-md-6 col-lg-6 col-xl-5 text-center mb-4 mb-xl-0">
         <img src="../assets/images/walter.png" alt="walter-header" class="img-fluid">
       </div>
       <div class="col-12 col-lg-11 col-xl-6 text-center text-xl-start">
