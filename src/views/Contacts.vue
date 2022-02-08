@@ -46,7 +46,7 @@
           <div>
             <h4 class="text-uppercase mb-3">{{ $t("contactsSection.contactDetails") }}</h4>
             <h5 class="mb-3"><i class="bi bi-geo-alt-fill me-2"></i>{{ $t("contactsSection.contactDetailLocation") }}</h5>
-            <h5 class="mb-3"><i class="bi bi-telephone-fill me-2"></i>+39 327 6099519</h5>
+            <h5 class="mb-3"><i class="bi bi-telephone-fill me-2"></i>+39 347 6099519</h5>
             <h5 class="mb-3"><i class="bi bi-envelope-fill me-2"></i>walter.satri@gmail.com</h5>
             <h5 class="mb-3"><i class="bi bi-skype me-2"></i>archiwalty</h5>
           </div>
