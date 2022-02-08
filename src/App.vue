@@ -94,7 +94,6 @@
   .Cookie--myTheme {
     background-color: #D3D3D3;
     font-weight: 600;
-    opacity: 0.95;
 
     p {
       color: #212529;
